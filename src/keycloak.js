@@ -1,14 +1,8 @@
-import Keycloak from 'keycloak-js'
- 
-// Setup Keycloak instance as needed
-// Pass initialization options as required or leave blank to load from 'keycloak.json'
-
+import Keycloak from "keycloak-js";
 const keycloakConfig = {
-    url: 'http://localhost:8080/auth',
-    realm: 'Demo',
-    clientId: 'react-app'
-}
-
+  url: "https://sso.bcperak.net/auth",
+  realm: "Demo-Realm",
+  clientId: "react-web-app",
+};
 const keycloak = new Keycloak(keycloakConfig);
-
-export default keycloak
+export default keycloak;
